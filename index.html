@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anarghya Voyages - Explore with Elegance</title>
+    <link href="Open Sans" rel="stylesheet">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background image */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-image: url('./images/ckm1.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        /* Header styles */
+        header {
+            background-color: linear-gradient(135deg, #85d15f 0%, #1e3c72 100%);
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            font-family: 'Roboto';
+            font-weight: 1000;
+            font-size: 3.5rem;
+            font-style: italic;
+            color: #ffffff;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: rgba(96, 96, 93, 0.9);
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.3rem;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #f9ca24;
+            color: #000;
+        }
+
+        /* Container styles */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Section styles */
+        section {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        section h2 {
+            color: #f9ca24;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p, ul {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Destination styles */
+        .destination-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .destination {
+            flex: 1 1 300px;
+            margin-bottom: 30px;
+        }
+        .destination h3 {
+            color: #f9ca24;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .destination img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .destination img:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Form styles */
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #85d15f;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: 600;
+        }
+        input[type="submit"]:hover {
+            background-color: #6cbf49;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-media a:hover {
+            color: #f9ca24;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anarghya Voyages</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#Destinations">Destinations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Anarghya Voyages, your ultimate destination for hassle-free travel booking. We are dedicated to providing you with memorable travel experiences that will last a lifetime. Whether you're planning a relaxing beach getaway or an adventurous mountain trek, we've got you covered.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>At Anarghya Voyages, we offer a wide range of travel services tailored to your needs:</p>
+            <ul>
+                <li>Flight bookings</li>
+                <li>Hotel reservations</li>
+                <li>Car rentals</li>
+                <li>Tour packages</li>
+                <!-- Add more services as needed -->
+            </ul>
+        </section>
+        <section id="Destinations" class="destination-container">
+            <div class="destination">
+                <h3>Shivamogga</h3>
+                <a href="smg.html"><img src="./images/smg1.jpeg" alt="Shivamogga"></a>
+            </div>
+            <div class="destination">   
+                <h3>Chikamagaluru</h3>
+                <a href="ckm.html"><img src="./images/ckm2.jpg" alt="Chikamagaluru"></a>
+            </div>
+            <div class="destination">
+                <h3>Udupi</h3>
+                <a href="udp.html"><img src="./images/udp1.jpeg" alt="Udupi"></a>
+            </div>    
+        </section>
+             
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="booking-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="destination">Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select destination...</option>
+                        <option value="Shivamogga">Shivamogga</option>
+                        <option value="Chikamagaluru">Chikamagaluru</option>
+                        <option value="Udupi">Udupi</option>
+                    </select>
+                    <label for="departure-date">Departure Date:</label>
+                    <input type="date" id="departure-date" name="departure-date" required>
+                    <input type="submit" value="Book Now">
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                Follow us:
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <p>© 2024 Anarghya Voyages - All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
